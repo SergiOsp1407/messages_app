@@ -1,4 +1,4 @@
-package com.messages_app;
+package com.messagesapp;
 
 import java.sql.DriverManager;
 import java.sql.*;
@@ -14,9 +14,9 @@ public class Connect {
         try{
             cn = DriverManager.getConnection("jdbc:mysql://localhost:3307/message_app","root","");
 
-            if( cn != null){
+            /*if( cn != null){
                 System.out.println("DataBase connection successful");
-            }
+            }*/
 
         }catch(SQLException e){
             System.out.println("Error trying to connect to DB " + e.getMessage());
